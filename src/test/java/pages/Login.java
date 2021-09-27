@@ -27,6 +27,5 @@ public class Login {
             txtPassword.sendKeys(password);
             Thread.sleep(1000);
             btnSubmitLogin.click();
-
         }
     }
