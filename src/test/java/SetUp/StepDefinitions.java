@@ -44,8 +44,9 @@ public class StepDefinitions {
         WebElement lblUserName=driver.findElement(By.xpath("//span[contains(text(),'Test User')]"));
         Assert.assertEquals(lblUserName.getText(),"Test User");
     }
+
     @After
     public void closeBrowser(){
-        driver.quit();
+        driver.close();
     }
 }
